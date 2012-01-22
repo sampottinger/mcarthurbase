@@ -1,0 +1,53 @@
+<%= form_for(@vocabulary) do |f| %>
+  <% if @vocabulary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vocabulary.errors.count, "error") %> prohibited this vocabulary from being saved:</h2>
+
+      <ul>
+      <% @vocabulary.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :study %><br />
+    <%= f.text_field :study %>
+  </div>
+  <div class="field">
+    <%= f.label :session_date %><br />
+    <%= f.date_select :session_date %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :session_num %><br />
+    <%= f.number_field :session_num %>
+  </div>
+  <div class="field">
+    <%= f.label :mcdi_type %><br />
+    <%= f.text_field :mcdi_type %>
+  </div>
+  <div class="field">
+    <%= f.label :percentile %><br />
+    <%= f.number_field :percentile %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

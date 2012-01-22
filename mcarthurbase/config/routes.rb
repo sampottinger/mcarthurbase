@@ -1,4 +1,19 @@
 Mcarthurbase::Application.routes.draw do
+  resources :words
+
+  resources :vocabulary_words
+
+  resources :vocabularies
+
+  resources :subjects
+
+  resources :languages
+
+  resources :groups
+
+  root :to => "home#index"
+  get "home/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

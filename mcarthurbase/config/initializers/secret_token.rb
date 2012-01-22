@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Mcarthurbase::Application.config.secret_token = 'f7b2eecc7d242ca6b4578caf814868867de91cb8dfd173de2a1c38986b874d05978eb01a824713b07c614411642822a8d6c7f0053e3f6811b88eeed2371c600b'
+Mcarthurbase::Application.config.secret_token = '0cb025f2752ac396dfbddae46ee2af7d9ca0f4fa75a7507900dcd8d3afa3151985858db80658229e51413b4643e721f0ef553a7dc69df4428077fe3a3da7c556'

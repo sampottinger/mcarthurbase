@@ -1,0 +1,31 @@
+<h1>Listing subjects</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Birthdate</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subjects.each do |subject| %>
+  <tr>
+    <td><%= subject.name %></td>
+    <td><%= subject.gender %></td>
+    <td><%= subject.birthdate %></td>
+    <td><%= subject.created_at %></td>
+    <td><%= subject.updated_at %></td>
+    <td><%= link_to 'Show', subject %></td>
+    <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
+    <td><%= link_to 'Destroy', subject, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subject', new_subject_path %>

@@ -1,0 +1,39 @@
+<h1>Listing vocabularies</h1>
+
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Study</th>
+    <th>Session date</th>
+    <th>Language</th>
+    <th>Session num</th>
+    <th>Mcdi type</th>
+    <th>Percentile</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vocabularies.each do |vocabulary| %>
+  <tr>
+    <td><%= vocabulary.subject %></td>
+    <td><%= vocabulary.study %></td>
+    <td><%= vocabulary.session_date %></td>
+    <td><%= vocabulary.language %></td>
+    <td><%= vocabulary.session_num %></td>
+    <td><%= vocabulary.mcdi_type %></td>
+    <td><%= vocabulary.percentile %></td>
+    <td><%= vocabulary.created_at %></td>
+    <td><%= vocabulary.updated_at %></td>
+    <td><%= link_to 'Show', vocabulary %></td>
+    <td><%= link_to 'Edit', edit_vocabulary_path(vocabulary) %></td>
+    <td><%= link_to 'Destroy', vocabulary, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vocabulary', new_vocabulary_path %>

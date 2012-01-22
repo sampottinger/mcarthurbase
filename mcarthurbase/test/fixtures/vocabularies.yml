@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject: 
+  study: MyString
+  session_date: 2012-01-21
+  language: 
+  session_num: 1
+  mcdi_type: MyString
+  percentile: 1
+  created_at: 2012-01-21 19:03:11
+  updated_at: 2012-01-21 19:03:11
+
+two:
+  subject: 
+  study: MyString
+  session_date: 2012-01-21
+  language: 
+  session_num: 1
+  mcdi_type: MyString
+  percentile: 1
+  created_at: 2012-01-21 19:03:11
+  updated_at: 2012-01-21 19:03:11

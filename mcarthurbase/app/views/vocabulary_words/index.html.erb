@@ -1,0 +1,27 @@
+<h1>Listing vocabulary_words</h1>
+
+<table>
+  <tr>
+    <th>Vocabulary</th>
+    <th>Word</th>
+    <th>Known</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vocabulary_words.each do |vocabulary_word| %>
+  <tr>
+    <td><%= vocabulary_word.vocabulary %></td>
+    <td><%= vocabulary_word.word %></td>
+    <td><%= vocabulary_word.known %></td>
+    <td><%= link_to 'Show', vocabulary_word %></td>
+    <td><%= link_to 'Edit', edit_vocabulary_word_path(vocabulary_word) %></td>
+    <td><%= link_to 'Destroy', vocabulary_word, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vocabulary word', new_vocabulary_word_path %>

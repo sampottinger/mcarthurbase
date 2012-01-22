@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  language: 
+  section: 1
+  name: MyString
+  footnote: MyString
+
+two:
+  language: 
+  section: 1
+  name: MyString
+  footnote: MyString

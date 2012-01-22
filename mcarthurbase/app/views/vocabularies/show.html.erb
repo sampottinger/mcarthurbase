@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @vocabulary.subject %>
+</p>
+
+<p>
+  <b>Study:</b>
+  <%= @vocabulary.study %>
+</p>
+
+<p>
+  <b>Session date:</b>
+  <%= @vocabulary.session_date %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @vocabulary.language %>
+</p>
+
+<p>
+  <b>Session num:</b>
+  <%= @vocabulary.session_num %>
+</p>
+
+<p>
+  <b>Mcdi type:</b>
+  <%= @vocabulary.mcdi_type %>
+</p>
+
+<p>
+  <b>Percentile:</b>
+  <%= @vocabulary.percentile %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @vocabulary.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @vocabulary.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_vocabulary_path(@vocabulary) %> |
+<%= link_to 'Back', vocabularies_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vocabulary: 
+  word: 
+  known: false
+
+two:
+  vocabulary: 
+  word: 
+  known: false

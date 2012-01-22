@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vocabulary:</b>
+  <%= @vocabulary_word.vocabulary %>
+</p>
+
+<p>
+  <b>Word:</b>
+  <%= @vocabulary_word.word %>
+</p>
+
+<p>
+  <b>Known:</b>
+  <%= @vocabulary_word.known %>
+</p>
+
+
+<%= link_to 'Edit', edit_vocabulary_word_path(@vocabulary_word) %> |
+<%= link_to 'Back', vocabulary_words_path %>
