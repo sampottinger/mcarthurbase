@@ -1,15 +1,26 @@
 Mcarthurbase::Application.routes.draw do
-  resources :words
+  resources :words do 
+    resources :vocabulary_words
+  end
 
   resources :vocabulary_words
 
-  resources :vocabularies
+  resources :vocabularies do
+    resources :vocabulary_words
+  end
 
-  resources :subjects
+  resources :subjects do
+    resources :vocabularies
+  end
 
-  resources :languages
+  resources :languages do
+    resources :groups
+    resources :vocabularies
+  end
 
-  resources :groups
+  resources :groups do
+    resources :words
+  end
 
   root :to => "home#index"
   get "home/index"
